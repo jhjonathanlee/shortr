@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.vertical-flex
+    h1= title
+    div.horizontal-center-flex
+      form#form-url
+        input(type="text" placeholder=placeholder).input-text
+        input(type="submit" value="SHORTEN").input-button

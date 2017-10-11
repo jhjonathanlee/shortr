@@ -1,0 +1,70 @@
+$primary-color: #673AB7;
+$primary-text-color: #FFFFFF;
+
+.horizontal-center-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $primary-color;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+  color: $primary-text-color;
+  font-size: 3em;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form-url {
+  width: 40%;
+  display: flex;
+
+  input {
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+  }
+
+  .input-text {
+    flex-grow: 6;
+    font-size: 1.5em;
+    padding: 0.25em;
+    padding-left: 0.5em;
+  }
+
+  .input-button {
+    flex-grow: 1;
+    font-weight: bold;
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: $primary-color;
+    background-color: $primary-text-color;
+
+    &:hover {
+      opacity: 0.85;  
+    }
+  }
+}
